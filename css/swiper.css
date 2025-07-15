@@ -1,0 +1,207 @@
+/* =====================
+   FEATURED PRODUCTS SECTION
+   ===================== */
+#featured {
+  scroll-margin-top: 12rem;
+}
+.featured-products {
+  margin-top: 9.6rem;
+  width: 100%;
+  color: var(--color-primary);
+}
+.featured-products__title {
+  font-size: 4.2rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.featured-products__subtitle {
+  text-transform: uppercase;
+}
+.featured-products-text {
+  text-align: left;
+}
+.featured-products-text-about {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.featured-products-text-title {
+  padding-top: 4px;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+/* =====================
+   SWIPER CONTAINER & NAVIGATION
+   ===================== */
+.swiper {
+  margin-top: 4.2rem;
+  padding: 0 0 6.4rem;
+  z-index: 0;
+}
+.swiper-navigation__prev-btn,
+.swiper-navigation__next-btn {
+  position: absolute;
+  top: 29%;
+  width: 62px;
+  height: 62px;
+  z-index: 2;
+  cursor: pointer;
+}
+.swiper-navigation__prev-btn {
+  left: 8px;
+}
+.swiper-navigation__next-btn {
+  right: 40px;
+}
+.swiper-navigation__prev-btn-icon {
+  transform: rotate(180deg);
+}
+
+/* =====================
+   SWIPER SLIDES
+   ===================== */
+.swiper-slide {
+  text-align: center;
+}
+.swiper-slide__img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeae8;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+}
+.swiper-slide__img-container img {
+  object-fit: contain;
+}
+.swiper-slide__img-bestsellerContainer,
+.swiper-slide__img-editionContainer {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  border-radius: 1000px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+.swiper-slide__img-bestsellerContainer {
+  background-color: var(--bestseller-color);
+  width: 120px;
+}
+.swiper-slide__img-editionContainer {
+  background-color: var(--purple-color);
+  width: 155px;
+}
+.swiper-slide__img-bestsellerContainer-text,
+.swiper-slide__img-editionContainer-text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: clamp(0.85rem, 1vw, 1.2rem);
+}
+.swiper-slide__img-wishlistContainer {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.swiper-slide__img-wishlistContainer-icon {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.swiper-slide__img--active {
+  content: url("../assets/FAV ICON=Fill.svg");
+  transform: scale(1.1);
+}
+.swiper-slide__img-wishlistContainer-icon:hover {
+  content: url("../assets/FAV ICON=Fill.svg");
+  transform: scale(1.1);
+}
+.swiper-slide__info-container {
+  text-align: left;
+  margin-top: 24px;
+  padding-left: 12px;
+}
+.swiper-slide__info-container-name {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.swiper-slide__info-container-price {
+  margin-top: 12px;
+  font-size: 1.6rem;
+}
+
+/* =====================
+   SWIPER PAGINATION
+   ===================== */
+.swiper-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 1px !important;
+  top: unset !important;
+}
+.swiper-pagination-line {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: #eaeae8;
+  transition: background 0.3s;
+}
+.swiper-pagination-bullet-active.swiper-pagination-line {
+  background: var(--color-primary);
+}
+
+/* =====================
+   MEDIA QUERIES
+   ===================== */
+@media screen and (min-width: 1100px) {
+  .swiper-navigation__prev-btn,
+  .swiper-navigation__next-btn {
+    top: 25%;
+  }
+  .swiper-navigation__prev-btn {
+    left: 10px;
+  }
+  .swiper-navigation__next-btn {
+    right: 22px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .swiper-navigation__prev-btn,
+  .swiper-navigation__next-btn {
+    top: 35%;
+  }
+  .swiper-navigation__prev-btn {
+    left: 37px;
+  }
+  .swiper-navigation__next-btn {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .featured-products {
+    margin-top: 3.6rem;
+  }
+  .featured-products__title {
+    font-size: 3.2rem;
+  }
+  .swiper {
+    margin-top: 3.2rem;
+  }
+  .swiper-slide__info-container-name {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 549px) {
+  .swiper {
+    padding: 0 0 3.3rem;
+  }
+}

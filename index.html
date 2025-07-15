@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma'sint | Alpine Gear Shop</title>
+    <meta name="description" content="Shop for alpine climbing jackets, helmets, and more. Featured and latest products for mountain adventures.">
+    <meta name="keywords" content="alpine, climbing, jackets, helmets, outdoor, gear, Forma'sint, featured products, product listing">
+    <link rel="icon" href="assets/FORMA ICON.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="header__nav flex" aria-label="Main navigation" role="navigation">
+          <div class="header__nav--logo flex">
+            <div class="header__nav--brands flex">
+              <a class="header__nav--link flex" href="#home" >
+                <span  class="header__nav--icon"></span>
+                <span >Forma'sint.</span>
+              </a>
+              <span class="header__nav--brand" >idomods &lt;/&gt;</span>
+            </div>
+          </div>
+          <ul class="main-menu" id="menu">
+            <li class="main-menu__item icon-mobile">
+              <a class="main-menu__link" id="nav-icon" href="#home" >
+                <span class="header__nav--icon"></span>
+              </a>
+               <button id="close-sidebar-btn" class="header__nav--close flex" aria-label="close menu" >
+                <img src="assets/CLOSE.svg" alt="Open menu">
+                <span>Close</span>
+              </button>
+            </li>
+            <li class="main-menu__item"><a class="main-menu__link" id="home-link" href="#home" aria-current="page">Home</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#featured">Featured products</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#listing">Product listing</a></li>
+          </ul>
+          <div class="overlay" aria-hidden="true"></div>
+          <button id="open-sidebar-btn" class="header__nav--hamburger" aria-label="open menu" aria-expanded="false" aria-controls="menu">
+            <img src="assets/ICONS.svg" alt="Open menu">
+            <span>Menu</span>
+          </button>
+          <div class="header__nav--role flex">
+            <img src="assets/SOCIAL.svg" alt="Icons" class="header__nav--icon" loading="lazy">
+            <div>Frontend developer</div>
+          </div>
+        </nav>
+      </header>
+      <main id="main-content" class="main">
+        <section class="hero observe" id="home">
+            <picture class="hero__logo" >
+              <source media="(max-width:580px)" srcset="assets/logo_mobile.webp">
+              <img src="assets/logo_container.webp" alt="Forma'sint Logo" id="hero-logo" loading="lazy">
+            </picture>
+            <picture class="hero__image">
+              <source media="(max-width:580px)" srcset="assets/hero_photo_mobile.webp" class="hero__image" >
+              <img src="assets/hero_photo.png" alt="Dark blue alpine image" style="width:auto;" class="hero__image" loading="lazy">
+            </picture>
+        </section>
+        <section id="featured" class="featured-products observe">
+          <p class="featured-products__subtitle">Featured products</p>
+          <h1 class="featured-products__title">Browse featured</h1>
+          <div class="swiper">
+            <div class="swiper-pagination swiper-pagination-progressbar"></div>
+            <div class="swiper-navigation__prev-btn">
+              <img src="./assets/ARROW_RIGHT.svg" alt="prev icon" class="swiper-navigation__prev-btn-icon" />
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide__img-container">
+                  <a href="#" target="_parent">
+                    <picture>
+                      <source media="(max-width:580px)" srcset="assets/product_photo_01_1x.webp">
+                      <source media="(max-width:1200px)" srcset="assets/product_photo_01_2x.webp">
+                      <img src="assets/product_photo_01_3x.webp" alt="Dark blue alpine image" loading="lazy" />
+                    </picture>
+                  </a>
+
+                  <div class="swiper-slide__img-bestsellerContainer">
+                    <p class="swiper-slide__img-bestsellerContainer-text">bestseller</p>
+                  </div>
+                  <div class="swiper-slide__img-wishlistContainer">
+                    <img data-id="1" src="./assets/FAV FILL.svg" alt="heart icon" class="swiper-slide__img-wishlistContainer-icon" />
+                  </div>
+                </div>
+                <div class="swiper-slide__info-container">
+                  <p class="swiper-slide__info-container-name">Dark blue alpine climbing jacket</p>
+                  <p class="swiper-slide__info-container-price">&euro; 300,00 EUR</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__img-container">
+                  <a href="#" target="_parent">
+                    <picture>
+                      <source media="(max-width:580px)" srcset="assets/product_photo_02_1x.webp">
+                      <source media="(max-width:1200px)" srcset="assets/product_photo_02_2x.webp">
+                      <img src="assets/product_photo_02_3x.webp" alt="Orange helmet image" loading="lazy" />
+                    </picture>
+                  </a>
+
+                  <div class="swiper-slide__img-editionContainer">
+                    <p class="swiper-slide__img-editionContainer-text">limited edition</p>
+                  </div>
+                  <div class="swiper-slide__img-wishlistContainer">
+                    <img data-id="2" src="./assets/FAV FILL.svg" alt="heart icon" class="swiper-slide__img-wishlistContainer-icon" />
+                  </div>
+                </div>
+                <div class="swiper-slide__info-container">
+                  <p class="swiper-slide__info-container-name">Orange helmet for alpine TOUNDRA</p>
+                  <p class="swiper-slide__info-container-price">&euro; 300,00 EUR</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__img-container">
+                  <a href="#" target="_parent">
+                    <picture>
+                      <source media="(max-width:580px)" srcset="assets/product_photo_03_1x.webp">
+                      <source media="(max-width:1200px)" srcset="assets/product_photo_03_2x.webp">
+                      <img src="assets/product_photo_03_3x.webp" alt="Grey alpine climbing jacket" loading="lazy" />
+                    </picture>
+                  </a>
+
+                  <div class="swiper-slide__img-wishlistContainer">
+                    <img data-id="3" src="./assets/FAV FILL.svg" alt="heart icon" class="swiper-slide__img-wishlistContainer-icon" />
+                  </div>
+                </div>
+                <div class="swiper-slide__info-container">
+                  <p class="swiper-slide__info-container-name">Grey alpine climbing jacket</p>
+                  <p class="swiper-slide__info-container-price">&euro; 300,00 EUR</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__img-container">
+                  <a href="#" target="_parent">
+                    <picture>
+                      <source media="(max-width:580px)" srcset="assets/product_photo_01_1x.webp">
+                      <source media="(max-width:1200px)" srcset="assets/product_photo_01_2x.webp">
+                      <img src="assets/product_photo_01_3x.webp" alt="Dark blue alpine image" loading="lazy" />
+                    </picture>
+                  </a>
+
+                  <div class="swiper-slide__img-bestsellerContainer">
+                    <p class="swiper-slide__img-bestsellerContainer-text">bestseller</p>
+                  </div>
+                  <div class="swiper-slide__img-wishlistContainer">
+                    <img data-id="4" src="./assets/FAV FILL.svg" alt="heart icon" class="swiper-slide__img-wishlistContainer-icon" />
+                  </div>
+                </div>
+                <div class="swiper-slide__info-container">
+                  <p class="swiper-slide__info-container-name">Dark blue alpine climbing jacket</p>
+                  <p class="swiper-slide__info-container-price">&euro; 300,00 EUR</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__img-container">
+                  <a href="#" target="_parent">
+                    <picture>
+                      <source media="(max-width:580px)" srcset="assets/product_photo_02_1x.webp">
+                      <source media="(max-width:1200px)" srcset="assets/product_photo_02_2x.webp">
+                      <img src="assets/product_photo_02_3x.webp" alt="Orange helmet image" loading="lazy" />
+                    </picture>
+                  </a>
+
+                  <div class="swiper-slide__img-editionContainer">
+                    <p class="swiper-slide__img-editionContainer-text">limited edition</p>
+                  </div>
+                  <div class="swiper-slide__img-wishlistContainer">
+                    <img data-id="5" src="./assets/FAV FILL.svg" alt="heart icon" class="swiper-slide__img-wishlistContainer-icon" />
+                  </div>
+                </div>
+                <div class="swiper-slide__info-container">
+                  <p class="swiper-slide__info-container-name">Orange helmet for alpine TOUNDRA</p>
+                  <p class="swiper-slide__info-container-price">&euro; 300,00 EUR</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__img-container">
+                  <a href="#" target="_parent">
+                    <picture>
+                      <source media="(max-width:580px)" srcset="assets/product_photo_03_1x.webp">
+                      <source media="(max-width:1200px)" srcset="assets/product_photo_03_2x.webp">
+                      <img src="assets/product_photo_03_3x.webp" alt="Dark blue alpine image" loading="lazy" />
+                    </picture>
+                  </a>
+
+                  <div class="swiper-slide__img-wishlistContainer">
+                    <img data-id="6" src="./assets/FAV FILL.svg" alt="heart icon" class="swiper-slide__img-wishlistContainer-icon" />
+                  </div>
+                </div>
+                <div class="swiper-slide__info-container">
+                  <p class="swiper-slide__info-container-name">Grey alpine climbing jacket</p>
+                  <p class="swiper-slide__info-container-price">&euro; 300,00 EUR</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper-slide__img-container">
+                  <a href="#" target="_parent">
+                    <picture>
+                      <source media="(max-width:580px)" srcset="assets/product_photo_01_1x.webp">
+                      <source media="(max-width:1200px)" srcset="assets/product_photo_01_2x.webp">
+                      <img src="assets/product_photo_01_3x.webp" alt="Dark blue alpine image" loading="lazy" />
+                    </picture>
+                  </a>
+
+                  <div class="swiper-slide__img-bestsellerContainer">
+                    <p class="swiper-slide__img-bestsellerContainer-text">bestseller</p>
+                  </div>
+                  <div class="swiper-slide__img-wishlistContainer">
+                    <img data-id="7" src="./assets/FAV FILL.svg" alt="heart icon" class="swiper-slide__img-wishlistContainer-icon" />
+                  </div>
+                </div>
+                <div class="swiper-slide__info-container">
+                  <p class="swiper-slide__info-container-name">Dark blue alpine climbing jacket</p>
+                  <p class="swiper-slide__info-container-price">&euro; 300,00 EUR</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-navigation__next-btn">
+              <img src="./assets/ARROW_RIGHT.svg" alt="next icon" class="swiper-navigation__next-btn-icon" />
+            </div>
+          </div>
+        </section>
+        <div class="main__products">
+        <div class="main__products-container" id="products">
+          <p class="main__products-container-title">number of products per page</p>
+          <div class="main__products-container-customSelect">
+            <ul class="main__products-container-customSelect-list"></ul>
+          </div>
+        </div>
+
+          <section id="listing" class="main__products-list"></section>
+      </main>
+    </div>
+        <div id="product-popup" class="popup hidden">
+      <div class="popup-content">
+        <button id="popup-close" class="popup-close">✕ Close</button>
+        <img id="popup-image" src="" alt="popup image" />
+        <p id="popup-id"></p>
+      </div>
+    </div>
+    <script type="module" src="./javascript/app.js"></script>
+  </body>
+</html>

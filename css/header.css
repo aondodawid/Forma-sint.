@@ -1,0 +1,219 @@
+/* =====================
+   HEADER & NAVIGATION
+   ===================== */
+
+nav {
+  flex-wrap: wrap;
+  padding: 2.4rem 1.6rem;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav-icon {
+  height: 2.4rem;
+}
+#close-sidebar-btn {
+  padding-left: 0;
+}
+.header__nav {
+  justify-content: space-between;
+}
+.header__nav--logo {
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-right: auto;
+}
+.header__nav--brands {
+  gap: 3.2rem;
+}
+.header__nav--role {
+  margin-left: auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+}
+.header__nav--icon {
+  cursor: pointer;
+}
+.header__nav--link {
+  align-items: center;
+  gap: 1.2rem;
+}
+.header__nav--link:hover .header__nav--icon::before {
+  background-image: url("../assets/FORMA ICON_dark.svg");
+  transform: scale(1.1);
+}
+.header__nav--icon,
+.header__nav--icon::before {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.header__nav--icon::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../assets/FORMA ICON.svg");
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+.header__nav--icon:hover::before {
+  background-image: url("../assets/FORMA ICON_dark.svg");
+  transform: scale(1.1);
+}
+.header__nav--hamburger,
+.header__nav--close {
+  display: none;
+}
+/* =====================
+   MAIN MENU
+   ===================== */
+.main-menu {
+  display: flex;
+}
+.main-menu__item,
+.header__nav--logo,
+.header__nav--role,
+.header__nav--hamburger,
+.header__nav--close {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.main-menu__link {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.main-menu__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.main-menu__link[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 600;
+}
+.overlay {
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: -5px;
+  height: 110vh;
+  background: rgba(29, 29, 29, 0.8);
+  padding: 0;
+  z-index: 10;
+  inset: 0;
+  display: none;
+  width: 140%;
+  left: -50px;
+}
+.main-menu.active {
+  right: 0;
+}
+.icon-mobile {
+  display: flex;
+  gap: 13.4rem;
+  padding-bottom: 10.4rem;
+}
+.header__nav--hamburger,
+.header__nav--close {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border: none;
+  background: transparent;
+}
+
+.main-menu.active ~ .overlay {
+  display: block;
+}
+/* =====================
+   HERO SECTION
+   ===================== */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 13.6rem;
+  box-sizing: border-box;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.logo-container {
+  margin-bottom: 4.2rem;
+}
+
+/* =====================
+   RESPONSIVE: DESKTOP MENU
+   ===================== */
+.main-menu {
+  gap: 2.4rem;
+  flex-direction: column;
+  height: 110vh;
+  width: min(29rem, 90%);
+  background: #fff;
+  position: fixed;
+  margin: -2.4rem 0;
+  padding: 2.4rem 1.6rem 2.4rem 3.2rem;
+  transition: right 0.3s ease-in-out;
+  justify-content: unset;
+  z-index: 11;
+  right: -100%;
+  justify-content: unset;
+  align-items: flex-start;
+}
+@media screen and (min-width: 1368px) {
+  .hero {
+    height: 100vh;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 770px) {
+  nav {
+    padding: 3.2rem 4.2rem;
+  }
+  .hero {
+    padding-top: 16.8rem;
+  }
+  .main-menu {
+    max-width: 100%;
+    gap: 4.2rem;
+    flex-direction: row;
+    height: initial;
+    width: initial;
+    position: initial;
+    padding: 0;
+    align-items: center;
+  }
+  .header__nav--hamburger {
+    display: none;
+  }
+  .icon-mobile {
+    display: none;
+  }
+}
+
+/* =====================
+   RESPONSIVE: TABLET
+   ===================== */
+@media screen and (min-width: 580px) {
+  .hero__logo {
+    margin-bottom: clamp(1rem, 3.9vh, 4.2rem);
+    aspect-ratio: 1836 / 138;
+    max-width: 1836px;
+  }
+  .hero__image {
+    aspect-ratio: 1836 / 732;
+    width: 100%;
+  }
+}

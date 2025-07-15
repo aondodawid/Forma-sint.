@@ -1,0 +1,109 @@
+/* =====================
+   VARIABLES
+   ===================== */
+:root {
+  --color-primary: rgba(29, 29, 29, 1);
+  --color-background: #fff;
+  --font-family: "Inter", sans-serif;
+  --font-size-base: 1.6rem;
+  --line-height-base: 1.4;
+  --bestseller-color: #d9d6b0;
+  --purple-color: #d4b0d9;
+  --back-color: #eaeae8;
+}
+
+/* =====================
+   MINIMAL RESET
+   ===================== */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  color: var(--color-primary);
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =====================
+   BASE ELEMENTS
+   ===================== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+
+/* =====================
+   LAYOUT & UTILITIES
+   ===================== */
+.wrapper {
+  color: var(--color-primary);
+  background-color: var(--color-background);
+  font-family: var(--font-family);
+  margin-inline: auto;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  padding: 0 1.6rem 6.4rem;
+  width: 100%;
+  max-width: 480px;
+}
+.flex {
+  display: flex;
+}
+
+/* =====================
+   HEADER VISIBILITY
+   ===================== */
+.header__nav--brand,
+.header__nav--role {
+  display: none;
+}
+
+@media screen and (min-width: 1158px) {
+  .header__nav--brand,
+  .header__nav--role {
+    display: flex;
+  }
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media screen and (min-width: 770px) {
+  .wrapper {
+    padding: 0 4.2rem 4.2rem;
+  }
+}
+@media screen and (min-width: 580px) {
+  .wrapper {
+    max-width: 1920px;
+  }
+}
