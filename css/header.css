@@ -234,7 +234,18 @@ nav > ul {
     display: none;
   }
 }
-
+@media screen and (max-width: 580px) {
+  .hero__logo {
+    padding-bottom: 2.4rem;
+  }
+  .hero__image {
+    width: 100% !important;
+  }
+  .hero__image img {
+    object-fit: cover;
+    object-position: 0 -60px;
+  }
+}
 /* =====================
    RESPONSIVE: TABLET
    ===================== */

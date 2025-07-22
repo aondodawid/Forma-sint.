@@ -73,7 +73,7 @@ button {
   line-height: var(--line-height-base);
   padding: 0 1.6rem 6.4rem;
   width: 100%;
-  max-width: 480px;
+  /* max-width: 480px; */
 }
 .flex {
   display: flex;
