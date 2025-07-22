@@ -152,12 +152,9 @@ class ProductRenderer {
     products.forEach((product) => fadeInObserver.observe(product));
     const lastProduct = products[products.length - 1];
     if (!lastProduct) return;
-    const loadMoreObserver = new IntersectionObserver(
-      async ([entry]) => {
-        if (entry.isIntersecting) await this.renderProducts();
-      },
-      { threshold: 1 },
-    );
+    const loadMoreObserver = new IntersectionObserver(async ([entry]) => {}, {
+      threshold: 1,
+    });
     loadMoreObserver.observe(lastProduct);
   }
 

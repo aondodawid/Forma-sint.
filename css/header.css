@@ -172,12 +172,44 @@ nav > ul {
   justify-content: unset;
   align-items: flex-start;
 }
+.hero {
+  height: 100vh;
+  justify-content: space-between;
+}
+.hero__image {
+  min-height: 75vh;
+}
+
+@media screen and (min-width: 580px) and (max-width: 1568px) {
+  .hero__image {
+    max-width: 1920px;
+    overflow: hidden;
+    height: 70vh;
+  }
+  .hero__image img {
+    height: 100vh;
+    width: 100%;
+    /* object-fit: cover; */
+    /* object-position: 200% 0; */
+    display: block;
+    margin: -120px 0 0 -419px;
+  }
+}
+@media screen and (max-width: 1223px) {
+}
 @media screen and (min-width: 1368px) {
   .hero {
     height: 100vh;
-    justify-content: center;
+    /* justify-content: unset; */
+
+    /* justify-content: center; */
   }
 }
+/* @media screen and (min-width: 1221px) {
+  .hero {
+    padding-top: 16.8rem;
+  }
+} */
 @media screen and (min-width: 770px) {
   nav {
     padding: 3.2rem 4.2rem;
